@@ -39,6 +39,20 @@ Replace `"path/to/your/transactions.csv"` with the actual path to your transacti
 
 - **Search-based Categorization**: Combines the results from search engines and GPT models to ascertain the most fitting category for the payees.
 
+## Future Goals
+
+The project aims to implement several enhancements to improve the categorization process:
+
+1. **GPT-based Strategy Decider**: Develop an intelligent system that utilizes GPT models to analyze the initial dataset from the `.csv` file and determine the most suitable categorization strategy based on the data characteristics.
+
+2. **Consensus Leader**: Introduce a mechanism where the results of two or more categorization strategies are compared against each other. A 'consensus leader' will then make the final decision on the best category, ensuring a more accurate and reliable categorization outcome.
+
+3. **Adaptive Learning Component**: Create a component that learns from past categorizations to improve future accuracy, reducing the need for manual corrections over time.
+
+4. **User Feedback Integration**: Implement a system to capture user feedback on categorization accuracy, which can be used to further train and refine the categorization algorithms.
+
+5. **Front End UI with Upload and Login Functionality**: Design and implement a user-friendly front end interface that allows users to upload their transaction CSV files and log in to view and manage their categorized transactions.
+
 ## Output
 
 The application outputs the categorized payees into a CSV file named `categorized_payees.csv` in the project's root directory.
@@ -57,11 +71,11 @@ Contributions to the development and enhancement of the application's categoriza
 
 ## License
 
-This project is licensed under [insert appropriate license here], which allows for modification, distribution, and private use.
+MIT License
 
 ## Acknowledgements
 
-The categorization strategies used in this application may utilize services and products provided by OpenAI and SERPAPI among others.
+The categorization strategies used in this application utilize services and products provided by OpenAI and SERPAPI among others.
 
 ## Support
 
