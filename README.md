@@ -59,7 +59,7 @@ The application outputs the categorized payees into a CSV file named `categorize
 
 ## Documentation
 
-For further details on all aspects of the application such as file structure, additional configurations, and contribution guidelines, please refer to the `docs.md` file.
+For further details on all aspects of the application such as file structure, additional configurations, and contribution guidelines, please refer to the wiki at https://github.com/shaiss/Transaction-Categorizor/wiki/Docs.
 
 ## Logging
 
@@ -67,7 +67,7 @@ The categorization process is logged into `app.log`, which facilitates tracking 
 
 ## Contributing
 
-Contributions to the development and enhancement of the application's categorization strategies are welcome. Please refer to `docs.md` for guidelines on contributing to the project.
+Contributions to the development and enhancement of the application's categorization strategies are welcome. Please refer to the docs for guidelines on contributing to the project.
 
 ## License
 
