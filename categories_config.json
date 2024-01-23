@@ -1,0 +1,54 @@
+{
+        "Banking": [
+            "bank", "savings", "loan", "mortgage", "credit", "debit", "finance", "financial", "chase", "jpmorgan",
+            "wells fargo", "bank of america", "citibank", "capital one", "pnc", "credit union", "interest", "atm", "overdraft"
+        ],
+        "Investments": [
+            "investment", "stock", "broker", "trade", "coinbase", "fidelity", "vanguard", "schwab", "robinhood", "etrade",
+            "mutual fund", "bond", "etf", "ira", "401k", "dividend", "capital gain", "stock market", "portfolio"
+        ],
+        "Utilities": [
+            "utility", "electric", "water", "gas", "sewer", "electric company", "water company", "gas company",
+            "power company", "waste management", "recycling", "trash", "plumbing", "heating", "cooling", "air conditioning"
+        ],
+        "Telecommunications": [
+            "telecom", "mobile", "t-mobile", "phone", "internet", "cable", "verizon", "att", "spectrum", "comcast",
+            "dish", "netflix", "hulu", "spotify", "youtube", "data", "wifi", "broadband", "cell phone", "landline"
+        ],
+        "Retail": [
+            "store", "retail", "shop", "market", "mall", "walmart", "target", "amazon", "best buy", "costco", "kroger",
+            "walgreens", "cvs", "home depot", "lowe's", "groceries", "clothing", "electronics", "furniture", "appliances"
+        ],
+        "Food & Beverage": [
+            "restaurant", "cafe", "food", "beverage", "bar", "coffee", "fast food", "pizza", "chinese", "mexican", "italian",
+            "grocery store", "bakery", "deli", "coffee shop", "bar", "pub", "brewery", "winery", "distillery"
+        ],
+        "Healthcare": [
+            "health", "hospital", "clinic", "medical", "pharmacy", "care", "doctor", "dentist", "therapist", "insurance",
+            "prescription", "co-pay", "deductible", "exam", "lab", "x-ray", "surgery", "ambulance", "urgent care"
+        ],
+        "Transportation": [
+            "transportation", "car", "gas", "parking", "toll", "uber", "lyft", "taxi", "bus", "train", "plane", "airline",
+            "rental car", "maintenance", "repair", "registration", "license", "ticket", "commute"
+        ],
+        "Entertainment": [
+            "entertainment", "movie", "music", "concert", "theater", "sports", "game", "ticket", "subscription", "streaming",
+            "netflix", "hulu", "spotify", "disney plus", "gym", "membership", "zoo", "museum", "amusement park"
+        ],
+        "Education": [
+            "education", "school", "college", "university", "tuition", "books", "supplies", "fees", "loan", "scholarship",
+            "tutoring", "test prep", "class", "course", "teacher", "professor", "library", "lab"
+        ],
+        "Housing": [
+            "housing", "rent", "mortgage", "property tax", "insurance", "utilities", "maintenance", "repair", "furniture",
+            "appliances", "cleaning", "lawn care", "pest control", "security", "landlord", "tenant"
+        ],
+        "Personal": [
+            "personal", "clothing", "hair", "beauty", "gym", "membership", "pet", "supplies", "grooming", "veterinary",
+            "childcare", "babysitting", "diapers", "formula", "toys", "gifts", "donations", "charity"
+        ],
+        "Business": [
+            "business", "office", "supplies", "equipment", "software", "travel", "meals", "entertainment", "client", "vendor",
+            "contractor", "employee", "payroll", "taxes"
+    ]
+}

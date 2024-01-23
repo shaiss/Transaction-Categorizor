@@ -1,0 +1,9 @@
+pandas
+python-dotenv
+openai
+# Add additional packages as needed for specific functionality, 
+# such as requests or beautifulsoup4 for web scraping in search-based categorization.
+Pyarrow
+fuzzywuzzy
+python-Levenshtein
+google-search-results

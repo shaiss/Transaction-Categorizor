@@ -1,0 +1,59 @@
+import logging
+from strategy_registry import CategorizationStrategy
+from serpapi import GoogleSearch
+from openai import OpenAI
+
+class SearchBasedCategorization(CategorizationStrategy):
+
+  def __init__(self, serpapi_api_key, openai_api_key):
+    self.serpapi_api_key = serpapi_api_key
+    self.client = OpenAI(api_key=openai_api_key)
+
+  def analyze_with_gpt4(self, payee, search_results):
+    response = self.client.chat.completions.create(
+    model="gpt-3.5-turbo",
+    messages=[{
+        "role":
+        "system",
+        "content":
+        "You are a bookkeeping expert trained in the art of categorization."
+    }, {
+        "role":
+        "assistant",
+        "content":
+        "I will respond in the format 'Category', nothing else. No explanations."
+    }, {
+        "role":
+        "user",
+        "content":
+        f"Please categorize the {payee} the based on search results provided: {search_results}"
+    }])
+    # Extract the category from the response
+    category = response.choices[0].message.content.strip()
+
+  def categorize(self, payee):
+    params = {
+        "api_key": self.serpapi_api_key,
+        "engine": "google",
+        "q": f"what company is this charge from:  {payee}",
+        "google_domain": "google.com",
+        "gl": "us",
+        "hl": "en"
+    }
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    combined_text = " ".join([
+        res.get('snippet', '')
+        for res in results.get('organic_results', [])[:3]
+    ])
+
+    logging.info(f"payee: {payee}")
+    
+    # logging.info results value 
+    #logging.info(f"results: {results}")
+  
+    # logging.debug the combined_text
+    logging.info(f"Combined text: {combined_text}")
+    
+    category = self.analyze_with_gpt4(payee, combined_text)
+    return category, 2  # Confidence score 2
